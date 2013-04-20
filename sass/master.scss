@@ -21,12 +21,16 @@ body {
 }
 
 .admin-sidebar {
+    top: 53px;
     -webkit-transform: translateZ(0); // Fix the rendering issue when clicking on local anchor tags
     background-color: darken($gray, 5%);
     width: 160px;
     height: 100%;
     
+    $grayDarkSlight: darken($gray, 5%);
+    
     li > a {
+        position: relative;
         background-color: $gray;
         font-family: Arial, Helvetica, sans-serif;
         font-size: small;
@@ -36,10 +40,17 @@ body {
         
         &:hover {
             color: $white;
-            background-color: darken($gray, 5%);
+            background-color: $grayDarkSlight;
+            border-bottom: 1px solid lighten($gray, 10%);            
         }
 
         border-bottom: 1px solid darken($gray, 5%);
+    }
+
+    li.active > a {
+        &::after{
+            @include fancy-wedge();
+        }   
     }
 
     .icon-chevron-right {
