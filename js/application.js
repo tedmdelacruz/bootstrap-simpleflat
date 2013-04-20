@@ -34,7 +34,7 @@ $(function(){
   } // function
 
   // Get all anchor elements with # targets
-  $('a[href*=#]').each(function() {
+  $('.smooth-scroll').each(function() {
     var thisPath = filterPath(this.pathname) || locationPath;
     if ( locationPath == thisPath &&
        ( location.hostname == this.hostname || !this.hostname) &&
