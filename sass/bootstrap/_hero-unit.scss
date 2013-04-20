@@ -11,7 +11,8 @@
   line-height: $baseLineHeight * 1.5;
   color: $heroUnitLeadColor;
   background-color: $heroUnitBackground;
-  @include border-radius(6px);
+  border: 1px solid darken($heroUnitBackground, 10%);
+  
   h1 {
     margin-bottom: 0;
     font-size: 60px;
@@ -19,6 +20,7 @@
     color: $heroUnitHeadingColor;
     letter-spacing: -1px;
   }
+
   li {
     line-height: $baseLineHeight * 1.5; // Reset since we specify in type.scss
   }
