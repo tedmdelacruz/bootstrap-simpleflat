@@ -29,12 +29,12 @@ body {
   border-bottom: 1px solid #484848; }
 .admin-sidebar li > a:hover {
   color: white;
+  background-color: #333333; }
+.admin-sidebar li.active > a {
   background-color: #222222;
   border-bottom: 1px solid #6e6e6e; }
-.admin-sidebar li.active > a {
-  background-color: #333333; }
 .admin-sidebar li.active > a:hover {
-  background-color: #222222; }
+  background-color: #333333; }
 .admin-sidebar li.active > a::after {
   content: "";
   top: -1px;

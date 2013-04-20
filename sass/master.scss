@@ -40,18 +40,18 @@ body {
         
         &:hover {
             color: $white;
-            background-color: $grayDarker;
-            border-bottom: 1px solid lighten($gray, 10%);            
+            background-color: $grayDark;
         }
 
         border-bottom: 1px solid darken($gray, 5%);
     }
 
     li.active > a {
-        background-color: $grayDark;
+        background-color: $grayDarker;
+        border-bottom: 1px solid lighten($gray, 10%);
         
         &:hover {
-            background-color: $grayDarker;
+            background-color: $grayDark;
         }
 
         &::after{
