@@ -80,6 +80,21 @@ body {
 
 }
 
+.lead { color: lighten($gray, 10%); }
+
+.page-header{
+    h1 {
+        float: left;
+    }
+
+    a {
+        margin-top: 18px;
+        font-size: small;
+    }
+
+    @include clearfix();
+}
+
 @media (max-width: 767px) {
     
     body {
@@ -104,6 +119,11 @@ body {
         
         .icon-chevron-right {
             display: none;
+        }
+
+        li.active > a::after {
+
+            border: none;
         }
     }
 
