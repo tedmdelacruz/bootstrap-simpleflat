@@ -51,4 +51,13 @@ $(function(){
       }
     }
   }); //$('a[href*=#]').each()
+
+  $(".admin-sidebar li a").click(function(){
+    var $el = $(this).parent();
+
+    if( ! $el.hasClass('active') ) {
+      $(".admin-sidebar li").removeClass('active');
+      $el.addClass('active');
+    }
+  });
 }); // $(function)
