@@ -40,7 +40,7 @@ body {
         
         &:hover {
             color: $white;
-            background-color: $grayDarkSlight;
+            background-color: $grayDarker;
             border-bottom: 1px solid lighten($gray, 10%);            
         }
 
@@ -48,6 +48,12 @@ body {
     }
 
     li.active > a {
+        background-color: $grayDark;
+        
+        &:hover {
+            background-color: $grayDarker;
+        }
+
         &::after{
             @include fancy-wedge();
         }   
