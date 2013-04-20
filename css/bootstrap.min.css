@@ -2148,7 +2148,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .btn-primary {
   background-color: #0088cc; }
 .btn-primary:hover {
-  background-color: #0044cc; }
+  background-color: #036690; }
 
 .btn-warning {
   background-color: #fbb450; }
@@ -2178,10 +2178,10 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .btn-primary, .btn-warning, .btn-danger, .btn-success, .btn-info, .btn-inverse {
   border: none;
   color: white;
-  -webkit-transition: background-color 0.2s linear;
-  -moz-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear; }
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear; }
 .btn-primary:hover, .btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-info:hover, .btn-inverse:hover {
   color: white; }
 
@@ -2342,7 +2342,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .btn-group.open .btn.dropdown-toggle {
   background-color: #e6e6e6; }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc; }
+  background-color: #036690; }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406; }
 .btn-group.open .btn-danger.dropdown-toggle {
