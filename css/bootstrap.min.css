@@ -4023,9 +4023,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   line-height: 30px;
   color: inherit;
   background-color: #eeeeee;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px; }
+  border: 1px solid #d4d4d4; }
 .hero-unit h1 {
   margin-bottom: 0;
   font-size: 60px;
