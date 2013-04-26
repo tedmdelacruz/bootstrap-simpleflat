@@ -3143,7 +3143,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   color: white;
   text-shadow: none; }
 .breadcrumb-inverse .active {
-  color: white;
+  color: #555555;
   text-shadow: none; }
 .breadcrumb-inverse .active::before {
   border-color: transparent transparent transparent #333333; }
