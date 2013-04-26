@@ -3114,8 +3114,6 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   position: relative;
   font-size: small;
   border-right: 1px solid gray; }
-.breadcrumb > li:hover {
-  background-color: #555555; }
 .breadcrumb > li > .divider {
   padding: 0 5px;
   color: #ccc; }
