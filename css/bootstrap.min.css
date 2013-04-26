@@ -3100,24 +3100,55 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   background-color: #0c0c0c \9; }
 
 .breadcrumb {
-  padding: 8px 15px;
   margin: 0 0 20px;
   list-style: none;
-  background-color: #f5f5f5;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0; }
+  background-color: #eeeeee;
+  font-size: 0; }
 .breadcrumb > li {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
   *zoom: 1;
-  text-shadow: 0 1px 0 white; }
+  padding: 8px 15px;
+  background-color: #999999;
+  position: relative;
+  font-size: small;
+  border-right: 1px solid gray; }
+.breadcrumb > li:hover {
+  background-color: #555555; }
 .breadcrumb > li > .divider {
   padding: 0 5px;
   color: #ccc; }
+.breadcrumb > li a {
+  color: white; }
+.breadcrumb > li a:hover {
+  text-decoration: none; }
 .breadcrumb .active {
-  color: #999999; }
+  color: #eeeeee;
+  border-right: none; }
+.breadcrumb .active::before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent transparent #999999;
+  border-width: 18px 18px 18px 10px;
+  right: -28px;
+  z-index: 1000;
+  top: 0; }
+
+.breadcrumb-inverse {
+  background-color: #555555; }
+.breadcrumb-inverse li {
+  background-color: #333333;
+  border-right: 1px solid #222222; }
+.breadcrumb-inverse a {
+  color: white;
+  text-shadow: none; }
+.breadcrumb-inverse .active {
+  color: white;
+  text-shadow: none; }
+.breadcrumb-inverse .active::before {
+  border-color: transparent transparent transparent #333333; }
 
 .pagination {
   margin: 20px 0; }
