@@ -212,7 +212,7 @@ $navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;
 
 $navbarInverseSearchBackground:          lighten($navbarInverseBackground, 25%) !default;
 $navbarInverseSearchBackgroundFocus:     $white !default;
-$navbarInverseSearchBorder:              $navbarInverseBackground !default;
+$navbarInverseSearchBorder:              lighten($navbarInverseBackground, 25%) !default;
 $navbarInverseSearchPlaceholderColor:    #ccc !default;
 
 $navbarInverseBrandColor:                $white !default;

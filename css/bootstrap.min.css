@@ -3058,7 +3058,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .navbar-inverse .navbar-search .search-query {
   color: white;
   background-color: #727272;
-  border-color: #323232;
+  border-color: #727272;
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -3316,9 +3316,6 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   border: 1px solid rgba(0, 0, 0, 0.3);
   *border: 1px solid #999;
   /* IE6-7 */
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -3327,10 +3324,10 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   background-clip: padding-box;
   outline: none; }
 .modal.fade {
-  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
-  -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
-  -o-transition: opacity 0.3s linear, top 0.3s ease-out;
-  transition: opacity 0.3s linear, top 0.3s ease-out;
+  -webkit-transition: opacity 0.2s linear, ease-out;
+  -moz-transition: opacity 0.2s linear, ease-out;
+  -o-transition: opacity 0.2s linear, ease-out;
+  transition: opacity 0.2s linear, ease-out;
   top: -25%; }
 .modal.fade.in {
   top: 10%; }
