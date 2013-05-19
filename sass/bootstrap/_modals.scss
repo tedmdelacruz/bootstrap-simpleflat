@@ -32,14 +32,13 @@
   border: 1px solid #999;
   border: 1px solid rgba(0,0,0,.3);
   *border: 1px solid #999; /* IE6-7 */
-  @include border-radius(6px);
   @include box-shadow(0 3px 7px rgba(0,0,0,0.3));
   @include background-clip(padding-box);
   // Remove focus outline from opened modal
   outline: none;
 
   &.fade {
-    @include transition(opacity .3s linear, top .3s ease-out);
+    @include transition(opacity .2s linear, ease-out);
     top: -25%;
   }
   &.fade.in { top: 10%; }
