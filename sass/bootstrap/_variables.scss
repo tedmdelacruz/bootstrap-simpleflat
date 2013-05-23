@@ -21,7 +21,6 @@ $white:                 #fff !default;
 // Accent colors
 // -------------------------
 $blue:                  #049cdb !default;
-// $blueDark:              #0064cd !default;
 $blueDark:              darken($blue, 15%) !default;
 $blueLight:             lighten($blue, 10%);
 $green:                 #46a546 !default;

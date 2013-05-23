@@ -52,12 +52,12 @@ $(function(){
     }
   }); //$('a[href*=#]').each()
 
-  $(".admin-sidebar li a").click(function(){
-    var $el = $(this).parent();
+  $("a", "#static-sidebar").click(function(){
+    var $parent = $(this).parent();
 
-    if( ! $el.hasClass('active') ) {
-      $(".admin-sidebar li").removeClass('active');
-      $el.addClass('active');
+    if( ! $parent.hasClass('active') ) {
+      $("li", "#static-sidebar").removeClass('active');
+      $parent.addClass('active');
     }
   });
 }); // $(function)
