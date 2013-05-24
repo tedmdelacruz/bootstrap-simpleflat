@@ -20,7 +20,11 @@
   line-height: 30px;
   color: white;
   text-shadow: none;
-  margin-bottom: 1px; }
+  margin-bottom: 1px;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear; }
 .nav-static-sidebar li > a:hover {
   color: white;
   background-color: #036690; }
