@@ -3106,9 +3106,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .breadcrumb {
   margin: 0 0 20px;
   list-style: none;
-  background-color: #eeeeee;
+  background-color: #ecf0f1;
   font-size: 0; }
-.breadcrumb > li {
+.breadcrumb li {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -3117,40 +3117,75 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   background-color: #999999;
   position: relative;
   font-size: small;
-  border-right: 1px solid gray; }
-.breadcrumb > li > .divider {
-  padding: 0 5px;
-  color: #ccc; }
-.breadcrumb > li a {
+  margin-right: 22px;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear; }
+.breadcrumb li a {
   color: white; }
-.breadcrumb > li a:hover {
+.breadcrumb li a:hover {
   text-decoration: none; }
-.breadcrumb .active {
-  color: #eeeeee;
-  border-right: none; }
-.breadcrumb .active::before {
+.breadcrumb li:before, .breadcrumb li:after {
   content: '';
   position: absolute;
   border-style: solid;
+  top: 0;
+  -webkit-transition: border-color 0.1s linear;
+  -moz-transition: border-color 0.1s linear;
+  -o-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear; }
+.breadcrumb li:before {
+  left: -18px;
+  border-color: #999999 transparent #999999 transparent;
+  border-width: 18px; }
+.breadcrumb li:after {
   border-color: transparent transparent transparent #999999;
-  border-width: 18px 18px 18px 10px;
-  right: -28px;
-  z-index: 1000;
-  top: 0; }
+  border-width: 18px;
+  right: -36px; }
+.breadcrumb li:hover {
+  background-color: #555555; }
+.breadcrumb li:hover:before {
+  border-color: #555555 transparent #555555 transparent; }
+.breadcrumb li:hover:after {
+  border-color: transparent transparent transparent #555555; }
+.breadcrumb li.active {
+  color: white;
+  border-right: none;
+  background-color: #049cdb; }
+.breadcrumb li.active:before {
+  border-color: #049cdb transparent #049cdb transparent; }
+.breadcrumb li.active:after {
+  border-color: transparent transparent transparent #049cdb; }
+.breadcrumb li.active:hover {
+  background-color: #036690; }
+.breadcrumb li.active:hover:before {
+  border-color: #036690 transparent #036690 transparent; }
+.breadcrumb li.active:hover:after {
+  border-color: transparent transparent transparent #036690; }
+.breadcrumb li:first-child:before {
+  border: none; }
 
 .breadcrumb-inverse {
   background-color: #555555; }
 .breadcrumb-inverse li {
   background-color: #333333;
   border-right: 1px solid #222222; }
-.breadcrumb-inverse a {
+.breadcrumb-inverse li a {
   color: white;
   text-shadow: none; }
-.breadcrumb-inverse .active {
-  color: #555555;
-  text-shadow: none; }
-.breadcrumb-inverse .active::before {
-  border-color: transparent transparent transparent #333333; }
+.breadcrumb-inverse li:before {
+  border-color: #333333 transparent #333333 transparent; }
+.breadcrumb-inverse li:after {
+  border-color: transparent transparent transparent #333333;
+  border-width: 18px;
+  right: -36px; }
+.breadcrumb-inverse li:hover {
+  background-color: #222222; }
+.breadcrumb-inverse li:hover:before {
+  border-color: #222222 transparent #222222 transparent; }
+.breadcrumb-inverse li:hover:after {
+  border-color: transparent transparent transparent #222222; }
 
 .pagination {
   margin: 20px 0; }

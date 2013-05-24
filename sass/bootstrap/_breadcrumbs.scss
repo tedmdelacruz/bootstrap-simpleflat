@@ -1,72 +1,83 @@
+@import 'extend/variables';
+
 //
 // Breadcrumbs
 // --------------------------------------------------
 
-
 .breadcrumb {
   margin: 0 0 $baseLineHeight;
   list-style: none;
-  background-color: $grayLighter;
+  background-color: $cloud;
   font-size: 0; // eliminates the spaces between inline-block elements
 
-  > li {
+  // li.active, a {
+  //   font-size: x-small;
+  //   text-transform: uppercase;
+  // }
+
+  li {
     display: inline-block;
     @include ie7-inline-block();
     padding: 8px 15px;
     background-color: $grayLight;
     position: relative;
     font-size: small;
-    border-right: 1px solid darken($grayLight, 10%);
-
-    > .divider {
-        padding: 0 5px;
-        color: #ccc;
-    }
-
+    margin-right: 22px;
+    @include transition(background-color 0.1s linear);
+    
     a {
       color: $white;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    // &::before, &::after {
-    //   content: '';
-    //   position: absolute;
-    //   border-style: solid;
-    // }
+      &:hover { text-decoration: none; }
+    } // a
 
-    // &::before {
-    //   border-color: transparent transparent transparent #ebebeb;
-    //   border-width: 18px 18px 18px 10px;
-    //   right: -28px;
-    //   z-index: 1000;
-    //   top: 0;      
-    // }
-
-    // &::after {
-    //   border-color: transparent transparent transparent $grayLighter;
-    //   border-width: 17px 17px 17px 9px;
-    //   right: -26px;
-    //   z-index: 1000;
-    //   top: 1px;      
-    // }
-  }
-  .active {
-    color: $grayLighter;
-    border-right: none;
-
-    &::before {
+    &:before, &:after {
       content: '';
       position: absolute;
       border-style: solid;
-      border-color: transparent transparent transparent $grayLight;
-      border-width: 18px 18px 18px 10px;
-      right: -28px;
-      z-index: 1000;
-      top: 0;      
+      top: 0;
+      @include transition(border-color 0.1s linear);
     }
+    
+    &:before { // arrow tail
+      left: -18px;
+      border-color: $grayLight transparent $grayLight transparent;
+      border-width: 18px;
+    }
+
+    &:after { // arrow head
+      border-color: transparent transparent transparent $grayLight;
+      border-width: 18px;
+      right: -36px;
+    }
+
+    &:hover {
+      background-color: $gray;      
+      &:before{ border-color: $gray transparent $gray transparent; }
+      &:after{ border-color: transparent transparent transparent $gray; }
+    }
+
+  } // li
+  
+  li.active {
+    color: $white;
+    border-right: none;
+    background-color: $blue;
+    
+    &:before{ border-color: $blue transparent $blue transparent; }
+    &:after { border-color: transparent transparent transparent $blue; }
+
+    &:hover {
+      background-color: $blueDark;      
+      &:before{ border-color: $blueDark transparent $blueDark transparent; }
+      &:after{ border-color: transparent transparent transparent $blueDark; }
+    }
+
+  } //.active
+  
+  li:first-child:before {
+    border: none;
   }
-}
+} // .breadcrumb
 
 .breadcrumb-inverse {
   background-color: $gray;
@@ -74,19 +85,27 @@
   li {
     background-color: $grayDark;
     border-right: 1px solid $grayDarker;
-  }
-
-  a {
-    color: $white;
-    text-shadow: none;
-  }
-
-  .active {
-    color: $gray;
-    text-shadow: none;
     
-    &::before {
-      border-color: transparent transparent transparent $grayDark;
+    a {
+      color: $white;
+      text-shadow: none;
     }
-  }
-}
+    
+    &:before { // arrow tail
+      border-color: $grayDark transparent $grayDark transparent;
+    }
+
+    &:after { // arrow head
+      border-color: transparent transparent transparent $grayDark;
+      border-width: 18px;
+      right: -36px;
+    }
+
+    &:hover {
+      background-color: $grayDarker;      
+      &:before{ border-color: $grayDarker transparent $grayDarker transparent; }
+      &:after{ border-color: transparent transparent transparent $grayDarker; }
+    }
+  } // li
+
+} // .breadcrumb-inverse
