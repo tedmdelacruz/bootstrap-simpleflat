@@ -25,6 +25,7 @@
         color: $sidebarLinkTextColor;
         text-shadow: none;
         margin-bottom: 1px;
+        @include transition(background-color 0.1s linear);
 
         &:hover {
             color: $sidebarLinkTextColorHover;
@@ -51,7 +52,6 @@
         }   
     }
 }
-
 
 @media (max-width: 979px) {
 
