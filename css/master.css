@@ -1,133 +1,36 @@
-.nav-static-topbar {
-  top: 0px;
-  position: fixed;
-  border-top: 2px solid #049cdb;
-}
-.nav-static-topbar .brand {
-  font-weight: bold;
-}
-
-.nav-static-sidebar {
-  position: fixed;
-  top: 53px;
-  -webkit-transform: translateZ(0);
-  background-color: #19232d;
-  width: 120px;
-  height: 100%;
-}
-.nav-static-sidebar li > a {
-  position: relative;
-  background-color: #34495e;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  line-height: 30px;
-  color: white;
-  text-shadow: none;
-  margin-bottom: 1px;
-  -webkit-transition: background-color 0.1s linear;
-  -moz-transition: background-color 0.1s linear;
-  -o-transition: background-color 0.1s linear;
-  transition: background-color 0.1s linear;
-}
-.nav-static-sidebar li > a:hover {
-  color: white;
-  background-color: #036690;
-}
-.nav-static-sidebar li.active > a {
-  background-color: #222f3d;
-  border-left: 5px solid #17b8fb;
-}
-.nav-static-sidebar li.active > a:hover {
-  background-color: #036690;
-}
-.nav-static-sidebar li.active > a::after {
-  content: "";
-  top: 8px;
-  position: absolute;
-  border-style: solid;
-  border-width: 10px;
-  right: 0;
-  border-color: transparent white transparent transparent;
-}
-
-@media (max-width: 979px) {
-  .nav-static-sidebar {
-    top: 61px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    margin: 0;
-  }
-
-  .nav-static-topbar,
-  .nav-static-sidebar {
-    position: nav-static;
-    width: auto;
-  }
-
-  .nav-static-topbar {
-    top: 0px;
-    margin-bottom: 0px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .nav-static-sidebar {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-  .nav-static-sidebar .icon-chevron-right {
-    display: none;
-  }
-  .nav-static-sidebar li.active > a::after {
-    border: none;
-  }
-
-  .section {
-    padding-top: 6px;
-  }
-
-  .main-content {
-    margin-left: 0;
-    padding-top: 40px;
-    padding-left: 0;
-  }
-}
+/* line 11, ../sass/master.scss */
 body {
   margin-top: 50px;
-  margin-bottom: 80px;
-}
+  margin-bottom: 80px; }
 
+/* line 16, ../sass/master.scss */
 .section {
-  padding-top: 48px;
-}
+  padding-top: 48px; }
 
+/* line 20, ../sass/master.scss */
 .main-content {
   margin-left: 140px;
-  padding-left: 40px;
-}
+  padding-left: 40px; }
 
+/* line 25, ../sass/master.scss */
 .lead {
-  color: #6e6e6e;
-}
+  color: #6e6e6e; }
 
+/* line 27, ../sass/master.scss */
 .page-header {
-  *zoom: 1;
-}
+  *zoom: 1; }
+/* line 28, ../sass/master.scss */
 .page-header h1 {
-  float: left;
-}
+  float: left; }
+/* line 32, ../sass/master.scss */
 .page-header a {
   margin-top: 18px;
-  font-size: small;
-}
+  font-size: small; }
+/* line 15, ../sass/bootstrap/_mixins.scss */
 .page-header:before, .page-header:after {
   display: table;
   content: "";
-  line-height: 0;
-}
+  line-height: 0; }
+/* line 22, ../sass/bootstrap/_mixins.scss */
 .page-header:after {
-  clear: both;
-}
+  clear: both; }

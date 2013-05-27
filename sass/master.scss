@@ -1,6 +1,12 @@
+// --- Master stylesheet
+// ----------------------------------------
+
+// Import necessary modules so that the master stylesheet could build
 @import "bootstrap/variables";
+
 @import "bootstrap/mixins";
-@import "extend";
+
+@import "extend/variables";
 
 body {
     margin-top: 50px;
