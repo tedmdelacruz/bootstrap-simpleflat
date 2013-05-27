@@ -2,6 +2,10 @@
 // Variables
 // --------------------------------------------------
 
+// --- Flat UI colors
+// ----------------------------------------
+@import "../extend/flatUI";
+
 
 // Global values
 // --------------------------------------------------
@@ -219,9 +223,10 @@ $navbarInverseBrandColor:                $white !default;
 
 // Pagination
 // -------------------------
-$paginationBackground:                #fff !default;
-$paginationBorder:                    #ddd !default;
-$paginationActiveBackground:          #f5f5f5 !default;
+$paginationBGColor:                $cloud !default;
+$paginationFontColor:              $blue !default;
+$paginationBorderColor:            $white !default;
+$paginationActiveBGColor:          darken($paginationBGColor, 5%) !default;
 
 
 // Hero unit
