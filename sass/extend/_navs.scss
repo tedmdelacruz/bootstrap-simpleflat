@@ -9,6 +9,8 @@
 }
 
 .nav-static-sidebar {
+    @extend .nav-list;
+
     position: fixed;
     top: 53px;
     -webkit-transform: translateZ(0); // Fix the Chrome rendering issue when clicking on local anchor tags
