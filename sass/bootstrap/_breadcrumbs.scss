@@ -10,11 +10,6 @@
   background-color: $cloud;
   font-size: 0; // eliminates the spaces between inline-block elements
 
-  // li.active, a {
-  //   font-size: x-small;
-  //   text-transform: uppercase;
-  // }
-
   li {
     display: inline-block;
     @include ie7-inline-block();
@@ -55,35 +50,36 @@
       &:before{ border-color: $gray transparent $gray transparent; }
       &:after{ border-color: transparent transparent transparent $gray; }
     }
-
-  } // li
-  
-  li.active {
-    color: $white;
-    border-right: none;
-    background-color: $blue;
     
-    &:before{ border-color: $blue transparent $blue transparent; }
-    &:after { border-color: transparent transparent transparent $blue; }
+    &.active {
+      color: $white;
+      border-right: none;
+      background-color: $blue;
+      
+      &:before{ border-color: $blue transparent $blue transparent; }
+      &:after { border-color: transparent transparent transparent $blue; }
 
-    &:hover {
-      background-color: $blueDark;      
-      &:before{ border-color: $blueDark transparent $blueDark transparent; }
-      &:after{ border-color: transparent transparent transparent $blueDark; }
-    }
-
-  } //.active
+      &:hover {
+        cursor: default;
+      }
+    } //.active
+    
+  } // li
   
   li:first-child:before {
     border: none;
   }
 } // .breadcrumb
 
+$breadcrumbInverseItemColor: $asphalt;
+$breadcrumbInverseBackgroundColor: darken($breadcrumbInverseItemColor, 10%);
+$breadcrumbInverseItemHoverColor: lighten($asphalt, 10%);
+
 .breadcrumb-inverse {
-  background-color: $gray;
+  background-color: $breadcrumbInverseBackgroundColor;
   
   li {
-    background-color: $grayDark;
+    background-color: $breadcrumbInverseItemColor;
     border-right: 1px solid $grayDarker;
     
     a {
@@ -92,20 +88,31 @@
     }
     
     &:before { // arrow tail
-      border-color: $grayDark transparent $grayDark transparent;
+      border-color: $breadcrumbInverseItemColor transparent $breadcrumbInverseItemColor transparent;
     }
 
     &:after { // arrow head
-      border-color: transparent transparent transparent $grayDark;
+      border-color: transparent transparent transparent $breadcrumbInverseItemColor;
       border-width: 18px;
       right: -36px;
     }
 
     &:hover {
-      background-color: $grayDarker;      
-      &:before{ border-color: $grayDarker transparent $grayDarker transparent; }
-      &:after{ border-color: transparent transparent transparent $grayDarker; }
+      background-color: $breadcrumbInverseItemHoverColor;      
+      &:before{ border-color: $breadcrumbInverseItemHoverColor transparent $breadcrumbInverseItemHoverColor transparent; }
+      &:after{ border-color: transparent transparent transparent $breadcrumbInverseItemHoverColor; }
     }
+    
+    &.active {
+      background-color: $blue; // ? refactor
+      
+      &:hover {
+        cursor: default;
+        &:before{ border-color: $blue transparent $blue transparent; }
+        &:after{ border-color: transparent transparent transparent $blue; }
+      }
+    } //.active
+
   } // li
 
 } // .breadcrumb-inverse
