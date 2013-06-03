@@ -28,7 +28,6 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand smooth-scroll" href="#top">SimpleFlat</a>
             <div class="nav-collapse">
               <ul class="nav">
                 <li><a href="#">Dashboard</a></li>
@@ -63,13 +62,15 @@
           </div>
         </div><!-- /navbar-inner -->
       </div><!-- /.nav-static-topbar -->
-      <ul class="nav nav-list nav-static-sidebar" id="static-sidebar">
-          <li class="active"><a class="smooth-scroll" href="#miscellaneous">Components</a></li>
-          <li><a class="smooth-scroll" href="#navbars">Navbars</a></li>
-          <li><a class="smooth-scroll" href="#buttons">Buttons</a></li>
-          <li><a class="smooth-scroll" href="#forms">Forms</a></li>
-          <li><a class="smooth-scroll" href="#typography">Typography</a></li>
-          <li><a class="smooth-scroll" href="#tables">Tables</a></li>
+      <ul class="nav-static-sidebar" id="static-sidebar">
+          <!-- <li class="brand"><a class="smooth-scroll" href="#top"><i class="icon-home"></i> <span class="visible-desktop">SimpleFlat</span></a></li> -->
+          <li class="brand"><a class="smooth-scroll" href="#top">SimpleFlat</a></li>          
+          <li class="active"><a class="smooth-scroll" href="#miscellaneous"><i class="icon-sitemap"></i> Components</a></li>
+          <li><a class="smooth-scroll" href="#navbars"><i class="icon-reorder"></i> Navbars</a></li>
+          <li><a class="smooth-scroll" href="#buttons"><i class="icon-circle"></i> Buttons</a></li>
+          <li><a class="smooth-scroll" href="#forms"><i class="icon-th-list"></i> Forms</a></li>
+          <li><a class="smooth-scroll" href="#typography"><i class="icon-font"></i> Typography</a></li>
+          <li><a class="smooth-scroll" href="#tables"><i class="icon-table"></i> Tables</a></li>
       </ul><!-- /.nav-static-sidebar -->
       <div class="container-fluid main-content">
         <header class="jumbotron subhead main-header section" id="top">
@@ -89,8 +90,8 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, iusto, illum ratione voluptatibus nesciunt obcaecati dolorum id sequi? Totam, corporis sed repellat consequuntur unde nostrum nulla sunt labore. Maiores, necessitatibus!</p>
           </div>
           <div class="modal-footer">
-              <a href="#" class="btn" data-dismiss="modal">Close</a>
-              <a href="#" class="btn btn-primary">Save</a>    
+              <a href="#" class="btn btn-medium btn-primary">Save</a>    
+              <a href="#" class="btn btn-medium btn-danger" data-dismiss="modal">Close</a>
           </div>
         </div>
         <section id="miscellaneous" class="section">
@@ -100,7 +101,7 @@
           </div>
           <div class="row-fluid">
             <div class="span12">
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">Launch demo modal</a>
+              <a href="#" class="btn btn-primary btn-large" data-toggle="modal" data-target="#demo-modal">Launch demo modal</a>
             </div>
           </div>
           <div class="row-fluid">
@@ -154,12 +155,10 @@
             <div class="span6">
               <h3 id="pager">Pagers</h3>        
                 <ul class="pager">
+                  <li class="previous disabled"><a href="#"><i class="icon-chevron-left"></i> First</a></li>
                   <li><a href="#">Previous</a></li>
                   <li><a href="#">Next</a></li>
-                </ul>              
-                <ul class="pager">
-                  <li class="previous disabled"><a href="#">← Older</a></li>
-                  <li class="next"><a href="#">Newer →</a></li>
+                  <li class="next"><a href="#">Last <i class="icon-chevron-right"></i></a></li>
                 </ul>
             </div>
           </div>
@@ -211,9 +210,6 @@
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">Library</a></li>
                   <li><a href="#">Applications</a></li>
-                  <li class="nav-header">Another list header</li>
-                  <li><a href="#">Profile</a></li>
-                  <li><a href="#">Settings</a></li>
                   <li class="divider"></li>
                   <li><a href="#">Help</a></li>
                 </ul>
@@ -751,10 +747,10 @@
             <h1>Tables</h1>
             <a href="#top" class="btn btn-link visible-phone pull-right smooth-scroll">↑ Back to top</a>
           </div> 
-          <table class="table table-bordered table-striped table-hover">
+          <table class="table table-bordered table-hover">
             <thead>
               <tr>
-                <th>#</th>
+                <th class="sorting_asc">#</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Username</th>

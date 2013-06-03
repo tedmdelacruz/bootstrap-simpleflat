@@ -55,7 +55,7 @@ $(function(){
   $("a", "#static-sidebar").click(function(){
     var $parent = $(this).parent();
 
-    if( ! $parent.hasClass('active') ) {
+    if( ! $parent.hasClass('active') && ! $parent.hasClass('brand') ) {
       $("li", "#static-sidebar").removeClass('active');
       $parent.addClass('active');
     }

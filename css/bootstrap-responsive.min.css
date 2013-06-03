@@ -974,56 +974,56 @@
   .navbar-fixed-top, .navbar-fixed-bottom {
     position: static; }
 
-  /* line 21, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 24, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top {
     margin-bottom: 20px; }
 
-  /* line 24, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 27, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar-fixed-bottom {
     margin-top: 20px; }
 
-  /* line 28, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 31, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 5px; }
 
-  /* line 31, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 34, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar .container {
     width: auto;
     padding: 0; }
 
-  /* line 36, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 39, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px; }
 
-  /* line 45, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 48, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse {
     clear: both; }
 
-  /* line 49, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 52, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav {
     float: none;
     margin: 0 0 10px; }
 
-  /* line 53, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 56, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li {
     float: none; }
 
-  /* line 56, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 59, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a {
     margin-bottom: 2px; }
 
-  /* line 59, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 62, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > .divider-vertical {
     display: none; }
 
-  /* line 62, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 65, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav .nav-header {
     color: #777777;
     text-shadow: none; }
 
-  /* line 68, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 71, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
@@ -1032,7 +1032,7 @@
     -moz-border-radius: 3px;
     border-radius: 3px; }
 
-  /* line 75, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 78, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .btn {
     padding: 4px 10px 4px;
     font-weight: normal;
@@ -1040,28 +1040,28 @@
     -moz-border-radius: 0;
     border-radius: 0; }
 
-  /* line 80, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 83, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px; }
 
-  /* line 86, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 89, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {
     background-color: #f2f2f2; }
 
-  /* line 90, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 93, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
     color: #999999; }
 
-  /* line 96, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 99, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus {
     background-color: #323232; }
 
-  /* line 100, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 103, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse.in .btn-group {
     margin-top: 5px;
     padding: 0; }
 
-  /* line 105, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 108, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu {
     position: static;
     top: auto;
@@ -1080,23 +1080,23 @@
     -moz-box-shadow: none;
     box-shadow: none; }
 
-  /* line 119, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 122, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .open > .dropdown-menu {
     display: block; }
 
-  /* line 124, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 127, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu:before, .nav-collapse .dropdown-menu:after {
     display: none; }
 
-  /* line 127, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 130, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu .divider {
     display: none; }
 
-  /* line 132, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 135, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > .dropdown-menu:before, .nav-collapse .nav > li > .dropdown-menu:after {
     display: none; }
 
-  /* line 138, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 141, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse .navbar-form, .nav-collapse .navbar-search {
     float: none;
     padding: 10px 15px;
@@ -1107,31 +1107,31 @@
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
-  /* line 147, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 150, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar-inverse .nav-collapse .navbar-form, .navbar-inverse .nav-collapse .navbar-search {
     border-top-color: #323232;
     border-bottom-color: #323232; }
 
-  /* line 152, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 155, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar .nav-collapse .nav.pull-right {
     float: none;
     margin-left: 0; }
 
-  /* line 158, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 161, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse, .nav-collapse.collapse {
     overflow: hidden;
     height: 0; }
 
-  /* line 163, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 166, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar .btn-navbar {
     display: block; }
 
-  /* line 169, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 172, ../sass/bootstrap/_responsive-navbar.scss */
   .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 980px) {
-  /* line 184, ../sass/bootstrap/_responsive-navbar.scss */
+  /* line 187, ../sass/bootstrap/_responsive-navbar.scss */
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important; } }
