@@ -11,13 +11,14 @@
   font-size: 0; // eliminates the spaces between inline-block elements
 
   li {
-    display: inline-block;
     @include ie7-inline-block();
-    padding: 8px 15px;
+    display: inline-block;
+    padding: 4px 12px;
     background-color: $grayLight;
     position: relative;
-    font-size: small;
-    margin-right: 22px;
+    font-size: x-small;
+    text-transform: uppercase;
+    margin-right: 15px;
     @include transition(background-color 0.1s linear);
     
     a {
@@ -34,15 +35,15 @@
     }
     
     &:before { // arrow tail
-      left: -18px;
+      left: -14px;
       border-color: $grayLight transparent $grayLight transparent;
-      border-width: 18px;
+      border-width: 14px;
     }
 
     &:after { // arrow head
       border-color: transparent transparent transparent $grayLight;
-      border-width: 18px;
-      right: -36px;
+      border-width: 14px;
+      right: -28px;
     }
 
     &:hover {
@@ -73,14 +74,14 @@
 
 $breadcrumbInverseItemColor: $asphalt;
 $breadcrumbInverseBackgroundColor: darken($breadcrumbInverseItemColor, 10%);
-$breadcrumbInverseItemHoverColor: lighten($asphalt, 10%);
+$breadcrumbInverseItemHoverColor: $blueDark;
 
 .breadcrumb-inverse {
   background-color: $breadcrumbInverseBackgroundColor;
   
   li {
     background-color: $breadcrumbInverseItemColor;
-    border-right: 1px solid $grayDarker;
+    // border-right: 1px solid $grayDarker;
     
     a {
       color: $white;
@@ -93,8 +94,6 @@ $breadcrumbInverseItemHoverColor: lighten($asphalt, 10%);
 
     &:after { // arrow head
       border-color: transparent transparent transparent $breadcrumbInverseItemColor;
-      border-width: 18px;
-      right: -36px;
     }
 
     &:hover {
