@@ -2,7 +2,6 @@
 // Pager pagination
 // --------------------------------------------------
 
-
 .pager {
   margin: $baseLineHeight 0;
   list-style: none;
@@ -16,9 +15,8 @@
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
+  background-color: $cloud;
   border: 1px solid #ddd;
-  // @include border-radius(15px);
 }
 .pager li > a:hover,
 .pager li > a:focus {
@@ -37,7 +35,7 @@
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
+  background-color: darken($cloud, 5%);
   color: $grayLight;
-  background-color: #fff;
   cursor: default;
 }
