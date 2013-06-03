@@ -22,11 +22,15 @@ body {
     padding-left: 40px;
 }
 
-.lead { color: lighten($gray, 10%); }
+.lead { 
+    color: lighten($gray, 10%); 
+    font-size: 16.5px
+}
 
 .page-header{
     h1 {
         float: left;
+        color: $grayDark;
     }
 
     a {
@@ -35,4 +39,24 @@ body {
     }   
 
     @include clearfix();
+}
+
+
+@media (max-width: 979px) {
+
+    body {
+        margin-top: 0;
+    }
+
+    .main-content {
+        margin-left: $mainContentMarginLeft - 40;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
 }

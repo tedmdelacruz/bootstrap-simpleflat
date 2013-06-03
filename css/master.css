@@ -14,15 +14,17 @@ body {
 
 /* line 25, ../sass/master.scss */
 .lead {
-  color: #6e6e6e; }
+  color: #6e6e6e;
+  font-size: 16.5px; }
 
-/* line 27, ../sass/master.scss */
+/* line 30, ../sass/master.scss */
 .page-header {
   *zoom: 1; }
-/* line 28, ../sass/master.scss */
+/* line 31, ../sass/master.scss */
 .page-header h1 {
-  float: left; }
-/* line 32, ../sass/master.scss */
+  float: left;
+  color: #333333; }
+/* line 36, ../sass/master.scss */
 .page-header a {
   margin-top: 18px;
   font-size: small; }
@@ -34,3 +36,18 @@ body {
 /* line 22, ../sass/bootstrap/_mixins.scss */
 .page-header:after {
   clear: both; }
+
+@media (max-width: 979px) {
+  /* line 47, ../sass/master.scss */
+  body {
+    margin-top: 0; }
+
+  /* line 51, ../sass/master.scss */
+  .main-content {
+    margin-left: 100px;
+    padding-left: 40px; } }
+@media (max-width: 767px) {
+  /* line 58, ../sass/master.scss */
+  .main-content {
+    margin-left: 0;
+    padding-left: 0; } }
