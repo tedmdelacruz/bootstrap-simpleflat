@@ -66,7 +66,7 @@
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 .nav-list > li > a {
-  padding: 3px 15px;
+  padding: 5px 15px;
 }
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
@@ -74,6 +74,8 @@
   color: $white;
   text-shadow: 0 -1px 0 rgba(0,0,0,.2);
   background-color: $linkColor;
+  border-left: 4px solid $blueLight;
+  position: relative;  
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
@@ -102,7 +104,7 @@
 .nav-pills > li > a {
   padding-right: 12px;
   padding-left: 12px;
-  margin-right: 2px;
+  margin-right: 0;
   line-height: 14px; // keeps the overall height an even number
 }
 
@@ -111,7 +113,7 @@
 
 // Give the tabs something to sit on
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $tabActiveBorderColor;
 }
 // Make the list-items overlay the bottom border
 .nav-tabs > li {
@@ -123,7 +125,6 @@
   padding-bottom: 8px;
   line-height: $baseLineHeight;
   border: 1px solid transparent;
-  // @include border-radius(4px 4px 0 0);
   &:hover,
   &:focus {
     border-color: $grayLighter $grayLighter #ddd;
@@ -133,12 +134,11 @@
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  color: $gray;
-  background-color: $bodyBackground;
-  border: 1px solid #ddd;
+  color: $tabActiveFontColor;
+  background-color: $tabActiveBGColor;
+  border: 1px solid $tabActiveBorderColor;
   border-bottom-color: transparent;
   cursor: default;
-  border-top: 1px solid $blue;
 }
 
 
@@ -151,7 +151,6 @@
   padding-bottom: 8px;
   margin-top: 2px;
   margin-bottom: 2px;
-  // @include border-radius(5px);
 }
 
 // Active state
@@ -181,13 +180,13 @@
 }
 .nav-tabs.nav-stacked > li > a {
   border: 1px solid #ddd;
-  @include border-radius(0);
+  
 }
 .nav-tabs.nav-stacked > li:first-child > a {
-  // @include border-top-radius(4px);
+
 }
 .nav-tabs.nav-stacked > li:last-child > a {
-  // @include border-bottom-radius(4px);
+
 }
 .nav-tabs.nav-stacked > li > a:hover,
 .nav-tabs.nav-stacked > li > a:focus {
@@ -209,10 +208,10 @@
 // ---------
 
 .nav-tabs .dropdown-menu {
-  @include border-radius(0 0 6px 6px); // remove the top rounded corners here since there is a hard edge above the menu
+
 }
 .nav-pills .dropdown-menu {
-  // @include border-radius(6px); // make rounded corners match the pills
+
 }
 
 // Default dropdown links
