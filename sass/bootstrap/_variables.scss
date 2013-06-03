@@ -82,10 +82,13 @@ $borderRadiusSmall:     0 !default;
 
 // Tables
 // -------------------------
-$tableBackground:                   transparent !default; // overall background-color
+$tableBackground:                   $cloud !default; // overall background-color
 $tableBackgroundAccent:             #f9f9f9 !default; // for striping
-$tableBackgroundHover:              #f5f5f5 !default; // for hover
-$tableBorder:                       #ddd !default; // table and cell border
+$tableBackgroundHover:              lighten($turquoise, 50%) !default; // for hover
+$tableBorder:                       #fff !default; // table and cell border
+$tableHeaderBGColor:                $gray;
+$tableHeaderFontColor:              $white;
+$tableCellBGColor:                  $cloud;
 
 // Buttons
 // -------------------------
@@ -220,13 +223,23 @@ $navbarInverseSearchPlaceholderColor:    #ccc !default;
 
 $navbarInverseBrandColor:                $white !default;
 
+// --- Tabs
+// -------------
+$tabActiveBorderColor: darken($cloud, 10%) !default;
+$tabActiveBGColor: $white;
+$tabActiveFontColor: $blue;
+
+
 
 // Pagination
 // -------------------------
 $paginationBGColor:                $cloud !default;
 $paginationFontColor:              $blue !default;
-$paginationBorderColor:            $white !default;
-$paginationActiveBGColor:          darken($paginationBGColor, 5%) !default;
+$paginationBorderColor:            darken($paginationBGColor, 5%) !default;
+$paginationHoverBGColor:           darken($paginationBGColor, 5%) !default;
+$paginationActiveBGColor:          $blue !default;
+$paginationActiveBorderColor:      darken($blue, 5%) !default;
+$paginationActiveFontColor:        $white !default;
 
 
 // Hero unit
