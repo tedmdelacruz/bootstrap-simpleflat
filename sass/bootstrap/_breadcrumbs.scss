@@ -20,7 +20,7 @@
     text-transform: uppercase;
     margin-right: 15px;
     @include transition(background-color 0.1s linear);
-    
+
     a {
       color: $white;
       &:hover { text-decoration: none; }
@@ -33,7 +33,7 @@
       top: 0;
       @include transition(border-color 0.1s linear);
     }
-    
+
     &:before { // arrow tail
       left: -14px;
       border-color: $grayLight transparent $grayLight transparent;
@@ -47,16 +47,16 @@
     }
 
     &:hover {
-      background-color: $gray;      
+      background-color: $gray;
       &:before{ border-color: $gray transparent $gray transparent; }
       &:after{ border-color: transparent transparent transparent $gray; }
     }
-    
+
     &.active {
       color: $white;
       border-right: none;
       background-color: $blue;
-      
+
       &:before{ border-color: $blue transparent $blue transparent; }
       &:after { border-color: transparent transparent transparent $blue; }
 
@@ -64,9 +64,9 @@
         cursor: default;
       }
     } //.active
-    
+
   } // li
-  
+
   li:first-child:before {
     border: none;
   }
@@ -78,17 +78,17 @@ $breadcrumbInverseItemHoverColor: $blueDark;
 
 .breadcrumb-inverse {
   background-color: $breadcrumbInverseBackgroundColor;
-  
+
   li {
     background-color: $breadcrumbInverseItemColor;
     // border-right: 1px solid $grayDarker;
-    
+
     a {
       color: $white;
       text-shadow: none;
     }
-    
-    &:before { // arrow tail
+
+    &:before { // arrow
       border-color: $breadcrumbInverseItemColor transparent $breadcrumbInverseItemColor transparent;
     }
 
@@ -97,14 +97,14 @@ $breadcrumbInverseItemHoverColor: $blueDark;
     }
 
     &:hover {
-      background-color: $breadcrumbInverseItemHoverColor;      
+      background-color: $breadcrumbInverseItemHoverColor;
       &:before{ border-color: $breadcrumbInverseItemHoverColor transparent $breadcrumbInverseItemHoverColor transparent; }
       &:after{ border-color: transparent transparent transparent $breadcrumbInverseItemHoverColor; }
     }
-    
+
     &.active {
       background-color: $blue; // ? refactor
-      
+
       &:hover {
         cursor: default;
         &:before{ border-color: $blue transparent $blue transparent; }
